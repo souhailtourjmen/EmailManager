@@ -1,0 +1,105 @@
+:root {
+    --main-color: #F2F2F2;
+    --secondary-color: #A6A6A6;
+    --button-color: #404040;
+    --text-color: #0D0D0D;
+    --success-color: #5cb85c;
+    --warning-color: #f0ad4e;
+    --danger-color: #d9534f;
+    --primary-color:#337ab7;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+
+
+}
+
+header h1 {
+    margin: 10%;
+    color: var(--text-color);
+}
+h1 {
+    color: var(--primary-color);
+}
+.img-responsive {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    float: right;
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+}
+
+.btn_priamry {
+    margin: 10%;
+    padding: 1%;
+    background: var(--button-color);
+    color: var(--main-color);
+    border-radius: 18px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.success{
+    color: var(--main-color);
+    background: var(--success-color);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.warning {
+    background-color: var(--warning-color);
+    text-align: center;
+    color: var(--main-color);
+}
+.form-group {
+    border-top: 1px solid var(--secondary-color);
+    width: 90%;
+}
+form {
+    margin: 2% auto;
+}
+.listmail {
+    width: 33%;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+.listmail p:nth-child(odd) {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+.btn-subscribe {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+
+}.btn-subscribe:hover {
+     color: var(--main-color);
+     background-color: var(--primary-color);
+ }
+.btn-unsubscribe{
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+}
+.btn-unsubscribe:hover{
+    color: var(--main-color);
+    background-color: var(--danger-color);
+}
+.email {
+    border: none;
+    border-bottom: 1px solid var(--danger-color);
+    outline: none;
+    background-color: var(--main-color);
+}
