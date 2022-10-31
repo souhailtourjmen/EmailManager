@@ -73,6 +73,7 @@ public class ListEmailServlet extends HttpServlet {
     public void unsubscribe(GetfileList emlist, HttpServletRequest request) {
         try {
             request.setAttribute("msg", "<h1 class='success'>"+emlist.search_and_remove(request.getParameter("email"))+"</h1>");
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }

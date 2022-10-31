@@ -22,8 +22,10 @@ public class GetfileList {
             String line;
             while ((line = br.readLine()) != null) {
                 // ajoute la ligne au buffer
-                list.add(line);
-                list.add("\n");
+              if(!line.equals("")) {
+                  list.add(line);
+                  list.add("\n");
+              }
             }
             fr.close();
 
@@ -36,7 +38,15 @@ public class GetfileList {
         list.add(str);
         return writefile();
     }
+    public void espace_remove() {
+        boolean isRemoved = false;
+        for (String s : list) {
+                isRemoved = list.remove("\n");
+                writefile();
+        }
 
+
+    }
     public String search_and_remove(String str) {
         boolean isRemoved = false;
         for (String s : list) {
@@ -59,7 +69,9 @@ public class GetfileList {
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
             BufferedWriter bw = new BufferedWriter(fw);
             for (String s : list) {
+
                 bw.write(s);
+                bw.write("\n");
             }
             bw.close();
             return ("Successfully add to the mail.");
