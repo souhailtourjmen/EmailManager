@@ -1,9 +1,8 @@
-package com.example.emailmanager.traitment;
+package com.example.emailmanager.Metier;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.io.IOException;
-import java.util.List;
 
 
 public class GetfileList {
@@ -24,7 +23,6 @@ public class GetfileList {
                 // ajoute la ligne au buffer
               if(!line.equals("")) {
                   list.add(line);
-                  list.add("\n");
               }
             }
             fr.close();

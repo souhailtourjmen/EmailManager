@@ -1,18 +1,13 @@
-package com.example.emailmanager.servlets;
+package com.example.emailmanager.Controler;
 
-import com.example.emailmanager.traitment.GetfileList;
+import com.example.emailmanager.Metier.GetfileList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet(name = "ListEmailServlet", value = "/ListEmailServlet")
 public class ListEmailServlet extends HttpServlet {

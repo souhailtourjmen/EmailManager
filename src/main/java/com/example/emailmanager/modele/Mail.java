@@ -1,50 +1,52 @@
 package com.example.emailmanager.modele;
 
-public class Auteur {
-    private String Nom;
-    private String Prenom;
+public class Mail {
+    private String objet;
+    private String Body;
     private String Email;
 
-    public Auteur(String nom, String prenom, String email) {
-        setNom(nom);
-        setPrenom(prenom);
+
+    public Mail(String objet, String body, String email) {
+        setObjet(objet);
+        setBody(body);
         setEmail(email);
     }
 
+
     /**
      * get field
      *
-     * @return Nom
+     * @return objet
      */
-    public String getNom() {
-        return this.Nom;
+    public String getObjet() {
+        return this.objet;
     }
 
     /**
      * set field
      *
-     * @param Nom
+     * @param objet
      */
-    public void setNom(String Nom) {
-        this.Nom = Nom;
+    public void setObjet(String objet) {
+        this.objet = objet;
     }
 
     /**
      * get field
      *
-     * @return Prenom
+     * @return Body
      */
-    public String getPrenom() {
-        return this.Prenom;
+    public String getBody() {
+        return this.Body;
     }
 
     /**
      * set field
      *
-     * @param Prenom
+     * @param Body
      */
-    public void setPrenom(String Prenom) {
-        this.Prenom = Prenom;
+    public void setBody(String Body) {
+        this.Body = Body;
     }
 
     /**

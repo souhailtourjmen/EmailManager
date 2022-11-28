@@ -9,11 +9,19 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>ListEmailServlet</servlet-name>
-        <servlet-class>com.example.emailmanager.servlets.ListEmailServlet</servlet-class>
+        <servlet-class>com.example.emailmanager.Controler.ListEmailServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ListEmailServlet</servlet-name>
         <url-pattern>/ListEmailServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FormMail</servlet-name>
+        <servlet-class>com.example.emailmanager.Controler.FormMail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormMail</servlet-name>
+        <url-pattern>/FormMail</url-pattern>
     </servlet-mapping>
     <mime-mapping>
         <extension>css</extension>
