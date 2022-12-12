@@ -13,7 +13,7 @@
 </header>
 
 
-<a class="btn_priamry" href="ListEmailServlet">Gérer la liste d'email</a>
+<a class="btn_priamry" href="FormMail">Gérer la liste d'email</a>
 </body>
 </html>
 

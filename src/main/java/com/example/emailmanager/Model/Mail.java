@@ -1,4 +1,4 @@
-package com.example.emailmanager.modele;
+package com.example.emailmanager.Model;
 
 public class Mail {
     private String objet;

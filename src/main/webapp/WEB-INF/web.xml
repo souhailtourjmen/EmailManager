@@ -23,6 +23,8 @@
         <servlet-name>FormMail</servlet-name>
         <url-pattern>/FormMail</url-pattern>
     </servlet-mapping>
+
+
     <mime-mapping>
         <extension>css</extension>
         <mime-type>text/css</mime-type>

@@ -1,6 +1,6 @@
 package com.example.emailmanager.DAO;
 
-public class Parametre {
+public class Config {
     private String  HOST ;
     private int PORT ;
     private String Name_DB ; // name data base
@@ -8,7 +8,7 @@ public class Parametre {
     private String Password_DB ; // password data base="";
 
 
-    public Parametre() {
+    public Config() {
 
         setHOST("127.0.0.1");   /* host server  data base */
         setPORT(3306);          /* port data base  */

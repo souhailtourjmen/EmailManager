@@ -56,6 +56,11 @@ h1 {
     text-align: center;
     color: var(--main-color);
 }
+.danger {
+    background-color: var(--danger-color);
+    text-align: center;
+    color: var(--main-color);
+}
 .form-group {
     border-top: 1px solid var(--secondary-color);
     width: 90%;

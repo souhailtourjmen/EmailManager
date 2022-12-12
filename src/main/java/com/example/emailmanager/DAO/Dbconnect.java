@@ -5,10 +5,10 @@ import java.sql.*;
 public class Dbconnect {
     Connection connection;
     Statement statement;
-    Parametre param;
+    Config param;
 
     public Dbconnect() {
-        setParam(new Parametre());
+        setParam(new Config());
     }
 
     /**
@@ -45,7 +45,19 @@ public class Dbconnect {
 
 
     }
+    public int exist(String request) throws ClassNotFoundException, SQLException, SQLException {
+        ResultSet rs = null;
+        int count =0;
 
+        connexionDatabase();
+        statement = connection.createStatement();
+        rs = statement.executeQuery(request);
+        while (rs.next()) {
+            count++;
+        }
+        System.err.println(count);
+        return count;
+    }
     public int Ins_Upd_Del(String req) throws SQLException, ClassNotFoundException {
         int rs = 0;
         try {
@@ -68,7 +80,7 @@ public class Dbconnect {
      *
      * @param param
      */
-    public void setParam(Parametre param) {
+    public void setParam(Config param) {
         this.param = param;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.emailmanager.modele;
+package com.example.emailmanager.Model;
 
 import com.example.emailmanager.Metier.RandomGeneratorteString;
 
@@ -13,6 +13,8 @@ public class Email {
         setEmail(email);
     }
 
+    public Email() {
+    }
 
     /**
      * get field
